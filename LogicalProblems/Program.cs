@@ -13,7 +13,7 @@ namespace LogicalProblems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1: fibonacci series\n" + "Enter 2: Exit\n");
+                Console.WriteLine("Enter 1: fibonacci series\n" + "Enter 2: Perfect Number\n" + "Enter 3: Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -21,8 +21,11 @@ namespace LogicalProblems
                         Fibonacci fibonacci = new Fibonacci();
                         fibonacci.CheckFibonacci();
                         break;
-                  
                     case 2:
+                        PerfectNumber perfectNumber = new PerfectNumber();
+                        perfectNumber.Perfect();
+                        break;
+                    case 3:
                         flag = false;
                         break;
 
